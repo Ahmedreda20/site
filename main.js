@@ -111,9 +111,9 @@ function getCookie(c_name) {
 
 
         if(getCookie('praise') === undefined){
-            elem.innerHTML = "عدد التسابيح في المرة السابقة كان 0 " ;
+            elem.innerHTML = "عدد التسبيح في المرة السابقة كان 0 " ;
         }else{
-            elem.innerHTML = "عدد التسابيح في المرة السابقة كان  " + getCookie('praise');
+            elem.innerHTML = "عدد التسبيح في المرة السابقة كان  " + getCookie('praise');
         }
         
      });  
