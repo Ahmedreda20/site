@@ -42,7 +42,7 @@ function LogIn(){
     }else{
         setCookie('Email' , email );
         setCookie("Password" , password);
-        window.open('upload.html ', '_self')
+        window.open('home.html ', '_self')
     }
     
     window.onclick = function(event) {
