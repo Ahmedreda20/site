@@ -414,6 +414,18 @@ p{
     border-radius:  5px 0 0 5px !important;
 
 }
+.dot {
+    cursor: pointer;
+    margin: 0 2px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    font-size: 15px;
+    margin-bottom: 5% !important;
+  }
+  
+  .active {
+    color: red;
+  }
 @media only screen and (max-width:350px){
     .QuranHeader img{
         width: 200px;
