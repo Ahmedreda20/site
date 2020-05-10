@@ -65,29 +65,7 @@ function LogIn(){
 
 showTime();
 
-function LogIn(){
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
 
-    var container = document.querySelector('.container');
-    var pass = "023156489";
-    var mail = "username";
-
-    if(email === "" || password === "" || email != mail || password != pass){
-        container.style.display = "block";
-    }else{
-        setCookie('Email' , email );
-        setCookie("Password" , password);
-        window.open('home.html ', '_self')
-    }
-    
-    window.onclick = function(event) {
-        if (event.target == container) {
-            container.style.display = "none";
-        }
-      }
-
-}
 
     function setCookie(c_name, value, exdays) {
         var exdate = new Date();
