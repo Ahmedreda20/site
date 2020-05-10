@@ -27,7 +27,7 @@ header{
     width: 100%;
     height: 50px;
 }
-header button{
+ .btn-bars{
     padding: 5px 15px;
     font-size: 25px;
     font-family: 'AbeeZee' , 'Tajawal';
@@ -43,7 +43,7 @@ header button{
     -o-transition: .8s ease;
     -ms-transition: .8s ease;
 }
-header button:hover{
+.btn-bars:hover{
     color: #131537;
     background: #17D4FE;
 }
@@ -273,7 +273,7 @@ p{
     height: 100%;
     position: fixed;
     top: 0;
-    left:-350px;
+    left:-300px;
     background: #131537;
     box-shadow: 0 0  20px #11122e;
     transition: .8s ease;
@@ -281,6 +281,7 @@ p{
     -moz-transition: .8s ease;
     -o-transition: .8s ease;
     -ms-transition: .8s ease;
+    z-index: 10;
 }
 #close-bar{
     
@@ -308,7 +309,6 @@ p{
 
 .ContainerBox .header li{
     padding: 10px;
-    border-bottom: 1px solid #0b0b1a;
     font-size: 15px;
     line-height: 25px;
     text-align: right;
@@ -322,7 +322,35 @@ p{
     padding-right:20px;
     font-weight: 400;
 }
-
+.header input{
+    font-family: 'AbeeZee' , 'Tajawal';
+    text-align: center;
+    padding: 6px 10px;
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    background: #17D4FE;
+    border: none;
+    border-radius: 4px;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+.header #submit:hover{
+    background: rgb(0, 186, 228);
+    color: #131537;
+    cursor: pointer;
+}
+.header #number{
+    width: 92%;
+    background: #fff;
+    color: black;
+}
 .footer{
     position: absolute;
     bottom: 0px;
@@ -362,10 +390,10 @@ p{
 
 .QuranContainer{
     width: 600px;
-    height: 83vh;
+    height: 85vh;
     background: #fff;
     display: block;
-    margin: 5% auto;
+    margin: 0 auto;
     color: black;
     position: relative;
     border-radius: 4px;
@@ -416,7 +444,7 @@ p{
 }
 .dot {
     cursor: pointer;
-    margin: 0 2px;
+    margin: 0 5px;
     display: inline-block;
     transition: background-color 0.6s ease;
     font-size: 15px;
@@ -426,6 +454,8 @@ p{
   .active {
     color: #17D4FE;
   }
+
+
 @media only screen and (max-width:350px){
     .QuranHeader img{
         width: 200px;
