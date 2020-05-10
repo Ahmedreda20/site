@@ -51,7 +51,7 @@ header button:hover{
     width: 400px;
     height: 250px;
     display: block;
-    margin-top: 35%;
+    margin-top: 20%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
@@ -370,6 +370,7 @@ p{
 @media only screen and (max-width:480px){
     .container-login{
         width: 100%;
+        margin-top: 40%;
     }
     .popup{
         width: 90%;
