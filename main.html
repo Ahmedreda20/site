@@ -231,7 +231,7 @@ function getCookie(c_name) {
         setCookie('NumberPages' , element.innerHTML);
 
     });  
-          window.addEventListener('load' ,  function(){
+                   window.addEventListener('load' ,  function(){
               var paragraph = document.createElement('P');
         list.appendChild(paragraph);
 
@@ -240,12 +240,11 @@ function getCookie(c_name) {
                         showSlides(slideIndex = getCookie('NumberPages'));
             });
             if(getCookie('NumberPages') === undefined){
-                element.style.display = "none";
+                paragraph.style.display = "none";
             }else{
-                element.style.display = "block";
+                paragraph.style.display = "block";
             }
         });
-
     </script>
 </body>
 </html>
