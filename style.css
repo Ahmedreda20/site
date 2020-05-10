@@ -424,7 +424,7 @@ p{
   }
   
   .active {
-    color: red;
+    color: #17D4FE;
   }
 @media only screen and (max-width:350px){
     .QuranHeader img{
