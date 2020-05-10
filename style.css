@@ -191,7 +191,7 @@ header button:hover{
     display: inline-block;
     margin: 13% auto;
     line-height: 25px;
-    text-align: right;
+    text-align: justify;
 }
 
 .clock {
@@ -359,14 +359,76 @@ p{
     color: white;
     font-size: 20px;
 }
+
+.QuranContainer{
+    width: 600px;
+    height: 83vh;
+    background: #fff;
+    display: block;
+    margin: 5% auto;
+    color: black;
+    position: relative;
+    border-radius: 4px;
+}
+.QuranHeader{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 1%;
+
+}
+.QuranHeader img{
+    width: auto;
+}
+.quran{
+    width: 100%;
+    height: 75vh;
+}
+.quran h1{
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 35px;
+}
+.QuranContainer button{
+    position: absolute;
+    top: 50%;
+    padding:5px 10px;
+    border: none;
+    background: #13153762;
+    color: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: -5%; 
+       transition: .8s ease;
+    -webkit-transition: .8s ease;
+    -moz-transition: .8s ease;
+    -o-transition: .8s ease;
+    -ms-transition: .8s ease;
+    border-radius: 0 5px 5px 0;
+}
+.next
+{
+    right: 0;
+    border-radius:  5px 0 0 5px !important;
+
+}
 @media only screen and (max-width:350px){
+    .QuranHeader img{
+        width: 200px;
+        margin-top: 5%;
+    }
     .ContainerBox{
         width: 90%;
-         margin-top: 40%;
     }
     .footer{
         width: 100%;
     }
+    .QuranContainer{
+        width: 95% !important; 
+    }
+
 }
 @media only screen and (max-width:480px){
     .container-login{
@@ -381,5 +443,28 @@ p{
     }
     .clock{
         margin-top: 15%;
+    }
+    .QuranContainer{
+        width: 90%;
+    }
+    .QuranContainer h1{
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .quran{
+        overflow-y: auto;
+    }
+}
+@media only screen and (min-width:481px) and (max-width:767px){
+    .QuranContainer{
+        width: 90%;
+        height: auto !important; 
+    }
+    .quran{
+        height: auto;
+    }
+    .QuranContainer h1{
+        font-size: 15px;
     }
 }
