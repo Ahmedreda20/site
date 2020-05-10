@@ -191,7 +191,7 @@ header button:hover{
     display: inline-block;
     margin: 13% auto;
     line-height: 25px;
-    text-align: justify;
+    text-align: right;
 }
 
 .clock {
