@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png/gif" href="./OS5H440.jpg">
+    <link rel="icon" type="image/png/gif" href="./OS5H440.jpg">
 
     <title>القرأن الكريم </title>
 </head>
@@ -236,14 +237,15 @@ function getCookie(c_name) {
 
         paragraph.innerHTML = getCookie('NumberPages');
         paragraph.addEventListener('click' , function(n){
-          
+                        showSlides(slideIndex = getCookie('NumberPages'));
+            });
             if(getCookie('NumberPages') === undefined){
                 element.style.display = "none";
             }else{
-                        showSlides(slideIndex = getCookie('NumberPages'));
-
+                element.style.display = "block";
+            }
         });
-  });
+
     </script>
 </body>
 </html>
