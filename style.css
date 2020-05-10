@@ -466,6 +466,8 @@ p{
     }
     .quran{
         overflow-y: auto;
+        height: 70vh;
+        margin-bottom: 2%;
     }
 }
 @media only screen and (min-width:481px) and (max-width:767px){
