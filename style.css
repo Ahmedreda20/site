@@ -351,14 +351,12 @@ p{
     background: #fff;
     color: black;
 }
-.footer{
-    position: absolute;
-    bottom: 0px;
-    left: 0;
+footer{
+    margin: 50% auto;
     width: 300px;
     text-align: center;
 }
-.footer p{
+footer p{
     font-size: 18px;
     font-weight: 500;
     line-height: 50px;
@@ -367,7 +365,7 @@ p{
     display: block;
     margin: 0 auto;
 }
-.footer p::after{
+footer p::after{
     content: "";
     width: 50px;
     height: 2px;
@@ -378,12 +376,12 @@ p{
     left: 0;
     margin-left: 48px;
 }
-.footer ul li{
+footer ul li{
     display: inline-block;
     padding: 10px 15px;
     list-style: none;
 }
-.footer ul li a{
+footer ul li a{
     color: white;
     font-size: 20px;
 }
@@ -469,6 +467,9 @@ p{
     }
     .QuranContainer{
         width: 95% !important; 
+    }
+    #number{
+        width: 95%;
     }
 
 }
