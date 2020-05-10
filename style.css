@@ -311,10 +311,18 @@ p{
     border-bottom: 1px solid #0b0b1a;
     font-size: 15px;
     line-height: 25px;
-    text-align: justify;
+    text-align: right;
     font-weight: 400;
     list-style: none;
 }
+.ContainerBox .header li p{
+    padding: 10px;
+    font-size: 15px;
+    line-height: 25px;
+    padding-right:20px;
+    font-weight: 400;
+}
+
 .footer{
     position: absolute;
     bottom: 0px;
@@ -323,10 +331,9 @@ p{
     text-align: center;
 }
 .footer p{
-    font-size: 15px;
-    font-weight: lighter;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 50px;
-    letter-spacing: 2px;
     position: relative;
     width: 150px;
     display: block;
