@@ -97,6 +97,23 @@ header button:hover{
     color: white;
     background: black;
 }
+.type{
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 3%;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.type a{
+    color: white;
+    text-decoration: none;
+}
 .container{
     position: fixed;
     top: 0;
