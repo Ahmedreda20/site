@@ -377,13 +377,15 @@ footer p::after{
     margin-left: 48px;
 }
 footer ul li{
-    display: inline-block;
-    padding: 10px 15px;
     list-style: none;
 }
 footer ul li a{
     color: white;
     font-size: 20px;
+        display: inline-block;
+    padding: 10px 15px; 
+    text-decoration: none;
+
 }
 
 .QuranContainer{
