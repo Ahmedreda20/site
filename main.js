@@ -49,6 +49,7 @@ function getCookie(c_name) {
         }
     }
     }
+    
     let count = 0;
         var div = document.getElementById("btn");
         var box = document.querySelector('.preview');
@@ -57,12 +58,30 @@ function getCookie(c_name) {
         var p = document.createElement('P');
         p.classList.add('value');
 
-        p.innerHTML = "استغفر الله العظيم";
         count+=1;
         setInterval( function(){
             p.style.display  = "none";
         }, 600);
 
+        if(div.innerHTML <= 33){
+            p.innerHTML = "سبحان الله";
+        }else{
+        if(div.innerHTML > 33 && div.innerHTML <= 66){
+            p.innerHTML = "الحمد الله";
+        }else{
+            if(div.innerHTML > 66 && div.innerHTML <= 99){
+                p.innerHTML = " الله اكبر";
+            }else{
+            if(div.innerHTML >= 90 && div.innerHTML <= 101){
+                p.innerHTML = " لا اله الا الله ";
+            }else{
+                if(div.innerHTML >= 100){
+                p.innerHTML = " استغفر الله العظيم ";
+                }
+            }
+            }
+        }
+    }
 
         div.innerHTML = count;
 
@@ -79,6 +98,7 @@ function getCookie(c_name) {
         count+=1;
 
         });
+
      window.addEventListener('load' , function(){
 
          var elem = document.createElement('LI');
@@ -93,16 +113,14 @@ function getCookie(c_name) {
         if(getCookie('praise') === undefined){
             elem.innerHTML = "  عدد التسابيح في المرة السابقة كان 0 مره" ;
         }else{
-            elem.innerHTML = "عدد التسابيح في المرة السابقة كان  " + getCookie('praise') + " مرة";
-            
-            if(getCookie('praise') <= 10 ){
+            elem.innerHTML = "عدد التسابيح في المرة السابقة كان  " + getCookie('praise') + " مره";
+        }
+        if(getCookie('praise') <= 10 ){
             elem.innerHTML = "عدد التسابيح في المرة السابقة كان  " + getCookie('praise') + " مرات";
         }else{
-            elem.innerHTML = "عدد التسابيح في المرة السابقة كان  " + getCookie('praise') + " مرة";
+            elem.innerHTML = "عدد التسابيح في المرة السابقة كان  " + getCookie('praise') + " مره";
 
         }
-        }
-     
 
         
      });  
@@ -116,9 +134,3 @@ function getCookie(c_name) {
             bars.style.left = "-300px";
 
          });
-
-
-
-         /* TypeWriter*/
-
-
