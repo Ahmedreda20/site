@@ -115,6 +115,8 @@ function getCookie(c_name) {
            /* elem.innerHTML = "  عدد التسابيح في المرة السابقة كان 0 مره" ;*/
             elem.style.display = "none";
         }else{
+            elem.style.display = "block";
+            
             elem.innerHTML = "عدد التسابيح في المرة السابقة كان  " + getCookie('praise') + " مره";
         }
 
