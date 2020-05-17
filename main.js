@@ -100,7 +100,10 @@ function getCookie(c_name) {
         });
 
      window.addEventListener('load' , function(){
-
+         var loading = document.querySelector('.loadingContainer');
+         setInterval(function() {
+             loading.style.display = "none";
+         }, 5000);
          var elem = document.createElement('LI');
 
          var ul = document.querySelector('.header');
@@ -108,7 +111,6 @@ function getCookie(c_name) {
          ul.appendChild(elem);
          elem.style.textAlign = "center";
          elem.style.borderBottom = "none";
-
 
         if(getCookie('praise') === undefined){
             elem.innerHTML = "  عدد التسابيح في المرة السابقة كان 0 مره" ;
