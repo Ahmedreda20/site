@@ -111,7 +111,12 @@ function getCookie(c_name) {
          ul.appendChild(elem);
          elem.style.textAlign = "center";
          elem.style.borderBottom = "none";
-
+        if(getCookie('praise') === undefined){
+           /* elem.innerHTML = "  عدد التسابيح في المرة السابقة كان 0 مره" ;*/
+            elem.style.display = "none";
+        }else{
+            elem.innerHTML = "عدد التسابيح في المرة السابقة كان  " + getCookie('praise') + " مره";
+        }
 
         if(getCookie('praise') <= 10 ){
             elem.innerHTML = "عدد التسابيح في المرة السابقة كان  " + getCookie('praise') + " مرات";
