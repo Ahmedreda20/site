@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png/gif" href="./OS5H440.jpg">
 
-    <title>Log in</title>
+    <title>Log in | Sabiha</title>
 </head>
 <body>
 
     <div class="container-login">
         <label for="text"><span>*</span> اسم المستخدم </label>
-        <input type="email" name="email" id="email" value="" placeholder="ادخل اسم المستخدم">
+        <input type="email" name="email" id="email" value="" placeholder="ادخل اسم المستخدم" autocomplete="off">
         <label for="text"><span>*</span> كلمة السر </label>
         <input type="password" name="password" id="password" value="" placeholder="ادخل كلمة السر">
 
         <button class="btn-log" onclick="LogIn()">تسجيل الدخول </button>
     </div>
     <h1 class="type">
-        <a href="" class="typewrite" data-period="2000" data-type='["قم بالضغط علي زر تسجيل الدخول وستظهر لك رسالة منبثقة تحتوى علي اسم المستخدم وكلمة السر "]'>
+        <a href="" class="typewrite" data-period="2000" data-type='[" قم بالضغط علي زر تسجيل الدخول وستظهر لك رسالة منبثقة تحتوى علي اسم المستخدم وكملة السر. "]'>
           </a>
       </h1>
     <div class="container">
@@ -41,12 +41,13 @@ function LogIn(){
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
 
+
     var container = document.querySelector('.container');
     var pass = "023156489";
     var mail = "username";
 
     if(email === "" || password === "" || email != mail || password != pass){
-        container.style.display = "block";
+        container.style.display = "flex";
     }else{
         setCookie('Email' , email );
         setCookie("Password" , password);
