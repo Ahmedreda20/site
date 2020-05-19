@@ -230,14 +230,13 @@ header{
     font-size: 20px;
     font-weight: 900;
     cursor: pointer;
-    margin: 50px -40px;
-    position: absolute;
     right: 50%;
-    margin-right: -20%;
-    margin-top: -2%;
-    top: 50%;
     border: none;
     display: none;
+    float: right;
+    position: absolute;
+    margin-right: -20%;
+    margin-top: -35%;
 }
 @keyframes anie{
     from{
