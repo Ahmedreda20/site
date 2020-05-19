@@ -54,18 +54,18 @@ header{
     background: #17D4FE !important;
 }
 
-.btn-bars span{
+.btn-bars #number{
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: -10px;
-    margin-right: -10px;
+    margin-top: -5px;
+    margin-right: -5px;
     font-size: 15px;
     font-weight: 900;
     background: rgb(43, 207, 98);
     color: white;
     border-radius: 100px;
-    padding: 0 5px;
+    padding: 7px;
     color: white;
     transition: .8s ease;
     -webkit-transition: .8s ease;
@@ -217,7 +217,144 @@ header{
     color: #131537;
     background: #17D4FE;
 }
-
+.btn-restart{
+    padding: 10px;
+    background: none;
+    border-radius: 100px;
+    transition: .8s ease;
+    -webkit-transition: .8s ease;
+    -moz-transition: .8s ease;
+    -o-transition: .8s ease;
+    -ms-transition: .8s ease;
+    font-family: 'AbeeZee' , 'Tajawal';
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 50px -40px;
+    position: absolute;
+    right: 50%;
+    margin-right: -20%;
+    margin-top: -2%;
+    top: 50%;
+    border: none;
+    display: none;
+}
+@keyframes anie{
+    from{
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+    }
+    to{
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+}
+@-webkit-keyframes anie{
+    from{
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+    }
+    to{
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+}
+@-moz-keyframes anie{
+    from{
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+    }
+    to{
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+}
+@-ms-keyframes anie{
+    from{
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+    }
+    to{
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+}
+@-o-keyframes anie{
+    from{
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+    }
+    to{
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+}
+.btn-restart svg{
+    width: 20px;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -ms-transition: 1s ease;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    animation: anie 1s;
+    -webkit-animation: anie 1s;
+    -moz-animation: anie 1s;
+    -ms-animation: anie 1s;
+    -o-animation: anie 1s;
+}
+.btn-restart svg:hover{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+.btn-restart #fill{
+    fill: white;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -ms-transition: 1s ease;
+}
+.btn-restart svg:hover #fill{
+    fill: rgb(43, 207, 98);
+}
 .box h1{
     font-weight: lighter;
     font-size: 25px;
@@ -256,7 +393,7 @@ p{
     height: 100%;
     position: fixed;
     top: 0;
-    left:-300px;
+    left:-350px;
     background: #131537;
     box-shadow: 0 0  20px #11122e;
     transition: .8s ease;
@@ -264,7 +401,9 @@ p{
     -moz-transition: .8s ease;
     -o-transition: .8s ease;
     -ms-transition: .8s ease;
-    z-index: 10;
+    z-index: 0;
+    overflow: auto;
+    overflow-x: hidden;
 }
 #close-bar{
     
@@ -305,6 +444,22 @@ p{
     padding-right:20px;
     font-weight: 400;
 }
+.ContainerBox .note{
+    padding: 10px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: right;
+    font-weight: 400;
+    list-style: none;
+}
+.note p{
+    padding: 10px;
+    font-size: 15px;
+    line-height: 25px;
+    padding-right:20px;
+    font-weight: 500;
+    color: lightcoral;
+}
 .header input{
     font-family: 'AbeeZee' , 'Tajawal';
     text-align: center;
@@ -329,11 +484,7 @@ p{
     color: #131537;
     cursor: pointer;
 }
-.header #number{
-    width: 92%;
-    background: #fff;
-    color: black;
-}
+
 footer{
     margin: 0 auto;
     width: 300px;
@@ -580,7 +731,7 @@ footer ul li a{
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.185);
@@ -600,7 +751,7 @@ footer ul li a{
 .popupZkr h1{
     color: black;
     font-size: 16px;
-    padding: 20px 15px;
+    padding: 10px 15px;
     font-weight: 500;
     text-align: right;
 }
@@ -658,10 +809,9 @@ footer ul li a{
     .QuranContainer{
         width: 95% !important; 
     }
-    #number{
-        width: 95%;
+    .btn-restart{
+        margin-right: -25%;
     }
-
 }
 @media only screen and (max-width:480px){
     .container-login{

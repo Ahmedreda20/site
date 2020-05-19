@@ -73,9 +73,17 @@ function getCookie(c_name) {
         }else{
             if(div.innerHTML > 66 && div.innerHTML <= 99){
                 p.innerHTML = " الله اكبر";
+
             }else{
             if(div.innerHTML >= 90 && div.innerHTML <= 100){
                 p.innerHTML = " لا اله الا الله ";
+                      var reload =   document.querySelector('.btn-restart');
+                      reload.style.display = "block";
+                      reload.addEventListener('click' , function(){
+                        location.reload();
+                      });
+            }else{
+                p.innerHTML =  'اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ على نَبِيِّنَا مُحمَّد' ;
             }
             }
         }
@@ -106,7 +114,7 @@ function getCookie(c_name) {
          var loading = document.querySelector('.loadingContainer');
          setInterval(function() {
              loading.style.display = "none";
-         }, 2500);
+         }, 100);
 
          var elem = document.createElement('LI');
 
@@ -124,7 +132,7 @@ function getCookie(c_name) {
         }else{
          elem.innerHTML = "عدد التسابيح في المرة السابقة كان  " + getCookie('praise') + " مره";
             num.style.display = "block";
-            num.innerHTML = "1+";
+
         }
         if(getCookie('praise') <= 10 ){
             elem.innerHTML = "عدد التسابيح في المرة السابقة كان  " + getCookie('praise') + " مرات";
