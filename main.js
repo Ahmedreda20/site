@@ -114,7 +114,7 @@ function getCookie(c_name) {
          var loading = document.querySelector('.loadingContainer');
          setInterval(function() {
              loading.style.display = "none";
-         }, 100);
+         }, 2500);
 
          var elem = document.createElement('LI');
 
