@@ -515,7 +515,7 @@ footer ul li a{
     text-align: center;
     z-index: 0;
     text-transform: uppercase;
-    display: none;
+    display: block;
   }
   
   .loader:before,
